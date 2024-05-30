@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Eventos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/utilidades.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Eventos Calendario</h1>
+
+    <main>
+        <section id="seccion-calendario" >
+
+            <div id="controles-calendario">
+                <button id="anterior" style="color: white;  background-color: black;" >Anterior</button>
+                <h2 id="mes-actual" style="color: black" >Mes</h2>
+                <button id="siguiente" style="color: white;  background-color: black;" >Siguiente</button>
+            </div>
+
+            <div id="calendario">
+                <!-- Aquí se generarán los días del calendario -->
+            </div>
+
+        </section>
+
+        <section id="seccion-evento">
+
+            <h2>Agregar - Editar Evento</h2>
+
+            <form id="formulario-evento">
+
+                <div>
+                    <label for="fecha-evento">Fecha:</label>
+                    <input type="date" id="fecha-evento" name="fecha" required>
+                </div>
+
+                <div>
+                    <label for="hora-evento">Hora:</label>
+                    <select id="hora-evento" name="hora" required>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="10:30">10:30 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="11:30">11:30 AM</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="descripcion-evento">Descripción Del Evento:</label>
+                    <textarea id="descripcion-evento" name="descripcion" required></textarea>
+                </div>
+                
+                <div>
+                    <label for="participantes-evento">Participantes:</label>
+                    <input type="text" id="participantes-evento" name="participantes" required>
+                </div>
+                <button type="submit"  style="background-image: url(../recursos/imagenes/flor2.avif);">Guardar Evento</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
